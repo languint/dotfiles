@@ -6,7 +6,7 @@
     userSettings = lib.mkForce {
       disable_ai = true;
 
-      ui_font_size = 13.0;
+      ui_font_size = 18.0;
       buffer_font_size = 15.0;
 
       project_panel = {
@@ -26,6 +26,12 @@
             };
           };
         };
+        Go = {
+          language_servers = [ "gopls" ];
+          code_actions_on_save = {
+            "source.organizeImports" = true;
+          };
+        };
       };
       lsp = {
         nixd = {
@@ -33,6 +39,11 @@
             nixpkgs = {
               expr = "import <nixpkgs> {}";
             };
+          };
+        };
+        gopls = {
+          binary = {
+            path = "gopls";
           };
         };
       };

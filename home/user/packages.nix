@@ -12,6 +12,7 @@
     pkgs.python311
     pkgs.nodejs
     pkgs.go
+    pkgs.nixfmt
 
     # Gaming
     pkgs.steam
