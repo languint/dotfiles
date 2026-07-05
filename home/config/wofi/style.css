@@ -1,0 +1,90 @@
+@define-color base            #1f1f1f;
+@define-color hover-gray      #2d2d2d;
+@define-color border-gray     #2b2b2b;
+@define-color text-muted      #858585;
+@define-color text-main       #cccccc;
+@define-color text-bright     #ffffff;
+@define-color vscode-blue     #007acc;
+@define-color vscode-red      #f14c4c;
+
+* {
+    font-family: "JetBrainsMono Nerd Font", monospace;
+    font-size: 14px;
+}
+
+window {
+    margin: 0px;
+    padding: 10px;
+    border: 1px solid @border-gray;
+    border-radius: 0px;
+    background-color: @base;
+}
+
+#inner-box {
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    background-color: @base;
+}
+
+#outer-box {
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    background-color: @base;
+}
+
+#scroll {
+    margin: 0px;
+    padding: 10px;
+    border: none;
+    background-color: @base;
+}
+
+#input {
+    margin: 5px 20px;
+    padding: 10px;
+    border: 1px solid @border-gray;
+    border-radius: 0px;
+    color: @text-main;
+    background-color: @hover-gray;
+}
+
+#input image {
+    border: none;
+    color: @vscode-blue;
+}
+
+#input * {
+    outline: 2px solid @vscode-blue !important;
+}
+
+#text {
+    margin: 5px;
+    border: none;
+    color: @text-main;
+}
+
+#entry {
+    background-color: @base;
+    border-radius: 0px;
+    padding: 4px 8px;
+}
+
+#entry arrow {
+    border: none;
+    color: @text-muted;
+}
+
+#entry:selected {
+    background-color: @hover-gray;
+    border: 1px solid @vscode-blue;
+}
+
+#entry:selected #text {
+    color: @text-bright;
+}
+
+#entry:drop(active) {
+    background-color: @vscode-blue !important;
+}
