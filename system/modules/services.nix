@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ pkgs, ... }:
 
 {
   services = {
@@ -6,17 +6,17 @@
 
     xserver = {
       enable = true;
-      layout = "us";
+      xkb.layout = "us";
+    };
 
-      displayManager = {
-        sddm.enable = true;
-      };
+    displayManager = {
+      sddm.enable = true;
     };
 
     ollama = {
-        enable = true;
-        package = pkgs.ollama-rocm;
-        rocmOverrideGfx = "10.3.0";
-      };
+      enable = true;
+      package = pkgs.ollama-rocm;
+      rocmOverrideGfx = "10.3.0";
+    };
   };
 }

@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ ... }:
 let
   myAliases = {
     fullClean = ''
@@ -19,9 +19,13 @@ in
   programs = {
     zsh = {
       enable = true;
-      enableAutosuggestions = true;
+      autosuggestion = {
+        enable = true;
+      };
+
       syntaxHighlighting.enable = true;
       shellAliases = myAliases;
+
       oh-my-zsh = {
         enable = true;
         plugins = [

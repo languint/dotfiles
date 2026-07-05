@@ -8,6 +8,7 @@
     ./programs.nix
     ./shell.nix
     ./stylix.nix
+    ./zed.nix
   ];
 
   nixpkgs = {

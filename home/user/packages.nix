@@ -11,10 +11,6 @@
     pkgs.python311
     pkgs.nodejs
 
-
-    # Text Editors
-    pkgs.zed-editor
-
     # Gaming
     pkgs.steam
 

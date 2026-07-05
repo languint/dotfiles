@@ -8,6 +8,7 @@
 
     polarity = "dark";
 
+
     base16Scheme = {
       base00 = "1f1f1f";
       base01 = "2d2d2d";
@@ -44,13 +45,20 @@
       };
     };
 
-    iconTheme = {
+    icons = {
       enable = true;
       package = pkgs.papirus-icon-theme;
       light = "Papirus-Light";
       dark = "Papirus-Dark";
     };
 
+    # iconTheme = {
+    #   enable = true;
+    #   package = pkgs.papirus-icon-theme;
+
+    # };
+
+    targets.firefox.profileNames = [ "default" ];
     targets.gtk.enable = true;
   };
 }
