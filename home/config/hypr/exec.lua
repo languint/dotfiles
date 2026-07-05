@@ -6,5 +6,6 @@ hl.on("hyprland.start", function()
     hl.exec_cmd("swayidle -w")
     hl.exec_cmd("nwg-look -a")
 
-    hl.exec_cmd("firefox", { workspace = "1 silent" })
+    h1.exec_cmd("discord", { workspace = "1 silent" })
+    hl.exec_cmd("firefox", { workspace = "2 silent" })
 end)

@@ -24,10 +24,10 @@ hl.bind(mod .. " + right", hl.dsp.focus({ direction = "r" }))
 hl.bind(mod .. " + up", hl.dsp.focus({ direction = "u" }))
 hl.bind(mod .. " + down", hl.dsp.focus({ direction = "d" }))
 
-hl.bind(mod .. " + ALT + right", hl.dsp.window.resize({ x = 10, y = 0 }, { relative = true }), { repeating = true })
-hl.bind(mod .. " + ALT + left", hl.dsp.window.resize({ x = -10, y = 0 }, { relative = true }), { repeating = true })
-hl.bind(mod .. " + ALT + up", hl.dsp.window.resize({ x = 0, y = -10 }, { relative = true }), { repeating = true })
-hl.bind(mod .. " + ALT + down", hl.dsp.window.resize({ x = 0, y = 10 }, { relative = true }), { repeating = true })
+hl.bind(mod .. " + ALT + right", hl.dsp.window.resize({ x = 10, y = 0, relative = true }), { repeating = true })
+hl.bind(mod .. " + ALT + left", hl.dsp.window.resize({ x = -10, y = 0, relative = true }), { repeating = true })
+hl.bind(mod .. " + ALT + up", hl.dsp.window.resize({ x = 0, y = -10, relative = true }), { repeating = true })
+hl.bind(mod .. " + ALT + down", hl.dsp.window.resize({ x = 0, y = 10, relative = true }), { repeating = true })
 
 local area_screenshot = runOnce("grimblast") .. " --notify copysave area"
 local output_screenshot = runOnce("grimblast") .. " --notify copysave output"
