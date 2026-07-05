@@ -4,12 +4,14 @@
   home.packages = [
     # Development
     pkgs.gh
+    pkgs.code-cursor
 
     # Toolchain
     pkgs.rustup
     pkgs.pnpm
     pkgs.python311
     pkgs.nodejs
+    pkgs.go
 
     # Gaming
     pkgs.steam

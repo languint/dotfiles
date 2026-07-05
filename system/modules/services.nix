@@ -13,6 +13,11 @@
       sddm.enable = true;
     };
 
+    gvfs.enable = true;
+    udisks2.enable = true;
+
+    flatpak.enable = true;
+
     ollama = {
       enable = true;
       package = pkgs.ollama-rocm;
