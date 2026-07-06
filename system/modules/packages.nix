@@ -12,6 +12,8 @@
 
     ripgrep
 
+    flatpak-builder
+
     gnumake
 
     xdg-desktop-portal-gtk

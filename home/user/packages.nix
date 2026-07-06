@@ -5,6 +5,7 @@
     # Development
     pkgs.gh
     pkgs.code-cursor
+    pkgs.just 
 
     # Toolchain
     pkgs.rustup

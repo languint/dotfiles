@@ -47,6 +47,12 @@
           };
         };
       };
+
+      diagnostics = {
+        inline = {
+          enabled = true;
+        };
+      };
     };
   };
 }
