@@ -12,10 +12,7 @@
 	  QT_WAYLAND_DISABLE_WINDOWDECORATION = "1";
 	  QT_AUTO_SCREEN_SCALE_FACTOR = "1";
     GTK_CSD = "0";
-	  WLR_DRM_DEVICES = "/dev/dri/card0";
-	  WLR_NO_HARDWARE_CURSORS = "1";
 	  CLUTTER_BACKEND = "wayland";
-	  WLR_RENDERER = "vulkan";
 	  XDG_CURRENT_DESKTOP = "Hyprland";
 	  XDG_SESSION_DESKTOP = "Hyprland";
 	  XDG_SESSION_TYPE = "wayland";
@@ -25,4 +22,8 @@
 	  XDG_CONFIG_HOME = "\${HOME}/.config";
 	  XDG_DATA_HOME = "\${HOME}/.local/share";
   };
+
+  home.sessionPath = [
+    "$HOME/.cargo/bin"
+  ];
 }

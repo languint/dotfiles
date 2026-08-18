@@ -1,8 +1,9 @@
-{ ... }:
+{ hostname ? "nixos", ... }:
 
 {
   imports = [
     ./user
+    ./hosts/${hostname}.nix
   ];
 
   home.username = "longuint";

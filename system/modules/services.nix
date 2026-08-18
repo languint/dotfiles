@@ -18,10 +18,13 @@
 
     flatpak.enable = true;
 
-    ollama = {
+    udev = {
+      packages = [ pkgs.platformio-core ];
+    };
+
+    mullvad-vpn = {
       enable = true;
-      package = pkgs.ollama-rocm;
-      rocmOverrideGfx = "10.3.0";
+      package = pkgs.mullvad-vpn;
     };
   };
 }

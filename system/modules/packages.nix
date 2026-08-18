@@ -19,4 +19,6 @@
     xdg-desktop-portal-gtk
     xdg-desktop-portal-wlr
   ];
+
+  virtualisation.docker.enable = true;
 }

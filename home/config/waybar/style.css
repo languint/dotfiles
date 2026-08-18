@@ -18,6 +18,7 @@ window#waybar {
 #workspaces,
 #clock,
 #pulseaudio,
+#backlight,
 #network,
 #battery,
 #bluetooth {
@@ -45,9 +46,11 @@ window#waybar #workspaces button:hover {
 }
 
 window#waybar #pulseaudio:hover,
+window#waybar #backlight:hover,
 window#waybar #network:hover,
 window#waybar #battery:hover,
-window#waybar #clock:hover window#waybar #bluetooth:hover {
+window#waybar #clock:hover,
+window#waybar #bluetooth:hover {
     background-color: #2d2d2d;
     background-image: none;
     color: #cccccc;

@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ pkgs, ... }:
 
 {
   users.users.longuint = {
@@ -8,10 +8,10 @@
       "wheel"
       "networkmanager"
       "input"
+      "dialout"
+      "docker"
+      "tty"
+      "plugdev"
     ];
   };
-
-  systemd.tmpfiles.rules = [
-    "d /mnt/storage 0755 longuint users - -"
-  ];
 }

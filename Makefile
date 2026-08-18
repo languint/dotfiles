@@ -1,6 +1,15 @@
+HOST ?= $(shell hostname)
+
+.PHONY: switch
+switch:
+	sudo nixos-rebuild switch --flake .#$(HOST)
+
+.PHONY: home
+home:
+	home-manager switch -b backup --flake .#$(HOST)
+
 .PHONY: update
-update:
-	home-manager switch --flake .#longuint
+update: home
 
 .PHONY: clean
 clean:

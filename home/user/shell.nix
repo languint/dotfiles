@@ -9,9 +9,9 @@ let
       sudo /run/current-system/bin/switch-to-configuration boot
     '';
 
-    rebuild = "sudo nixos-rebuild switch --flake ~/dotfiles/";
-    fullRebuild = "sudo nixos-rebuild switch --flake ~/dotfiles/ && home-manager switch --flake ~/dotfiles/";
-    homeRebuild = "home-manager switch --flake ~/dotfiles/";
+    rebuild = "sudo nixos-rebuild switch --flake ~/dotfiles/#$(hostname)";
+    fullRebuild = "sudo nixos-rebuild switch --flake ~/dotfiles/#$(hostname) && home-manager switch -b backup --flake ~/dotfiles/#$(hostname)";
+    homeRebuild = "home-manager switch -b backup --flake ~/dotfiles/#$(hostname)";
     purgeConfig = "find ~/.config -type f -name \"*.backup\" -delete";
 };
 in

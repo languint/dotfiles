@@ -55,6 +55,24 @@ hl.bind("XF86AudioMute", hl.dsp.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_SINK@ to
 hl.bind("XF86AudioMicMute", hl.dsp.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"), { locked = true })
 
 hl.bind(
+    mod .. " + CTRL + ALT + left",
+    hl.dsp.window.move({ monitor = "l" })
+)
+
+hl.bind(
+    mod .. " + CTRL + ALT + right",
+    hl.dsp.window.move({ monitor = "r" })
+)
+
+hl.bind(mod .. " + bracketright",
+    hl.dsp.focus({ workspace = "e+1" })
+)
+
+hl.bind(mod .. " + bracketleft",
+    hl.dsp.focus({ workspace = "e-1" })
+)
+
+hl.bind(
     "XF86AudioRaiseVolume",
     hl.dsp.exec_cmd("wpctl set-volume -l '1.0' @DEFAULT_AUDIO_SINK@ 6%+"),
     { locked = true, repeating = true }
@@ -64,3 +82,6 @@ hl.bind(
     hl.dsp.exec_cmd("wpctl set-volume -l '1.0' @DEFAULT_AUDIO_SINK@ 6%-"),
     { locked = true, repeating = true }
 )
+
+hl.bind("XF86MonBrightnessUp", hl.dsp.exec_cmd("brightnessctl set +5%"), { locked = true, repeating = true })
+hl.bind("XF86MonBrightnessDown", hl.dsp.exec_cmd("brightnessctl set 5%-"), { locked = true, repeating = true })
