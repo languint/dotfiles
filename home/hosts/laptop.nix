@@ -12,4 +12,8 @@
     force = true;
     source = ./waybar.laptop.jsonc;
   };
+  home.file.".config/waybar/style.css" = {
+    force = true;
+    source = ./style.laptop.css;
+  };
 }

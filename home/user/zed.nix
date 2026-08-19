@@ -6,8 +6,8 @@
     userSettings = lib.mkForce {
       disable_ai = true;
 
-      ui_font_size = 18.0;
-      buffer_font_size = 15.0;
+      ui_font_size = 24.0;
+      buffer_font_size = 18.0;
 
       project_panel = {
         dock = "right";
