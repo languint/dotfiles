@@ -1,6 +1,6 @@
 * {
     font-family: "JetBrainsMono Nerd Font", "Segoe UI", Roboto, sans-serif;
-    font-size: 12px;
+    font-size: 20px;
     font-weight: 500;
     border: none;
     border-radius: 0;
@@ -22,7 +22,7 @@ window#waybar {
 #network,
 #battery,
 #bluetooth {
-    padding: 0 12px;
+    padding: 0 20px;
     background-color: transparent;
 }
 
