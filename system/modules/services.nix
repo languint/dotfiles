@@ -18,6 +18,8 @@
 
     flatpak.enable = true;
 
+    tailscale.enable = true;
+
     udev = {
       packages = [ pkgs.platformio-core ];
     };
