@@ -6,6 +6,7 @@
     pkgs.gh
     pkgs.just
     pkgs.beekeeper-studio
+    pkgs.android-studio
 
     # Toolchain
     pkgs.rustup
